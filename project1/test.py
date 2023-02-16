@@ -31,6 +31,7 @@ def main():
     
     userfeedback = []
     for i in searchResult:
+        url, title, description = i
         print((url,title,description))
         rel = input(" relevent? type Y/N ")
         if(rel == "Y" or rel == "y"):
