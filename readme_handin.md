@@ -14,6 +14,18 @@
 **Description for Program Running:**
 
 
+**Description for Program Running:**
+
+* Prepare the enviroment:
+  * In project1 folder, give execution right for install.sh by using: sudo chmod +x install.sh
+  * It will install all required packages and set up the enviroment.
+  
+* Executing test.py:
+  * in the project1 folder, it contains the test.py file. 
+  * Run: python3 test.py AIzaSyDm0Wcp0OqqLiWypz0ijCRMjkHZ2mYisJs 2d6a0e6f605702952 0.9 cases
+  * API key: AIzaSyDm0Wcp0OqqLiWypz0ijCRMjkHZ2mYisJs
+  * Engine id: 2d6a0e6f605702952
+
 
 **Description for Project Design:**
 
