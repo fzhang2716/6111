@@ -57,5 +57,5 @@
   * In case that the original search words have some interruptive information (i.e. useless for the targeted information based on the user feedbacks) and that such words won't appear in the keyword dictionary, we will assign a 0-value for such words in the reordering process, which aims to give them the least importance in the future queries.
 
 
-
-
+* **Non-HTML FIle:**
+  * In the search algorith, we decided to ignore the non-html files as suggested in https://edstem.org/us/courses/34785/discussion/2623177. The search algorithm analyze the snippet/title from the query as the keywords.
