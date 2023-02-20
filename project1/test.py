@@ -2,10 +2,8 @@ import pprint
 from googleapiclient.discovery import build
 from keybert import KeyBERT
 import sys
-import spacy
 from copy import deepcopy
 
-ner_model = spacy.load('en_core_web_sm')
 keybert_model = KeyBERT()
 
 def processUserInput():
@@ -95,6 +93,7 @@ def fetch_new_words(_query_dict, _search_words):
                 else:
                     _search_words.append(word_2)
                     new_word_count += 1
+                    
         if new_word_count >= 2:
             break
     
@@ -135,7 +134,8 @@ def main():
         searchResult = list()
 
         data = service.cse().list(q=" ".join(search_words), cx=engine_id,).execute()
-        
+
+        # retrieve search results
         for page_idx, page in enumerate(data["items"]):
             url = page["formattedUrl"]
             title = page["title"]
@@ -147,11 +147,16 @@ def main():
             print("please enter broad, ambiguous queries.")
             break
             
+        # get user feedback
         user_feedback = []
-        for result in searchResult:
+        for result_idx, result in enumerate(searchResult):
             url, title, description, _ = result
-            print((url,title,description))
-            rel = input(" relevent? type Y/N. ")
+            print("=================================")
+            print("result no.", result_idx+1)
+            print("url:", url)
+            print("title:", title)
+            print("description", description)
+            rel = input(" relevant? type Y/N. ")
             if rel in ["Y", "y"]:
                 user_feedback.append(1)
             elif rel in ["N", "n"]:
@@ -160,19 +165,20 @@ def main():
                 raise ValueError("Please type Y/N.")
 
         if sum(user_feedback)/ 10. >= target_precision:
-            print("reach target precision at iter:{}.".format(iteration))
+            print("reach target precision at iter:{} with precision {}/{}.".format(iteration, sum(user_feedback), "10"))
             break
         elif sum(user_feedback) == 0:
             print("zero precision at iter:{}.".format(iteration))
             break
-            
+        
+        # requery
         relevant_pages = fetch_relevant_pages(user_feedback, searchResult)
         query_dict = compute_word_scores(query_dict, relevant_pages)
         search_words = fetch_new_words(query_dict, search_words)
         search_words = reorder_new_words(query_dict, search_words)
         
-        print("next search words:{}".format(search_words))
-        print(query_dict)
+        print("iter:{}\t current precision:{}/10\t new search words:{}".format(iteration, sum(user_feedback), " ".join(search_words)))
+        
         iteration += 1
             
             
