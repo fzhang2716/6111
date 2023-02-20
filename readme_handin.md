@@ -1,5 +1,11 @@
 **team members:** Ruineng Li, rl3315; Haoxuan Zhang, hz2716.
 
+**api key:**
+
+**engine id:**
+
+
+
 **Files:**
 
 * install.sh: please install the packages listed in this .sh file before running the code
@@ -30,6 +36,26 @@
 
 **Description of the query-modification method:**
 
-* Adding new keywords: 
-  * unfinished.
+* **Outline:** Our proposed query-modification method first leverage user feedbacks to obtain relevant pages. Then the titles and snippets of all relevant pages will be processed by the method of computing scores for words within all contents, denoting the importance of the corresponding word. Then, the scores will be sorted and the two words with the highest importance scores will be added to the search words for the next iteration. Details for word score computation, new words fetching and reordering will be given below.
+
+* **Word score computation:** 
+
+  * We leverage keyBERT to extract the most possible 2-gram and 1-gram key words of the contents. For every keyword, we record the importance ( which is the value given by keyBERT), and the occurrence of it among all the retrieved texts using a dictionary. 
+  * We handle 2-gram keywords and 1-gram keywords in different ways. For 2-gram keywords, we update information (i.e. their importance scores) for the extracted 2-gram, the first word in the 2-gram and the second word in the 2-gram simultaneously. For 1-gram keywords, we directly update information for this 1-gram. Both the importance scores and the number of occurrences are updated cumulatively during the entire search process. Besides, importance scores are added every time it appears in a 2-gram keyword or a 1-gram keyword, while the number of occurrence is updated by pages. To put it in another way, if a word simultaneously appears as part of a 2-gram keyword and independently as a 1-gram keyword for a specific relevant page, then its importance scores will be added twice, while it's occurrence will only be counted once.
+
+* **New words fetching:**
+
+  * By the above word score computation we obtain a dictionary containing all the information for words in relevant pages. This dictionary will first be sorted by 
+    $$
+    0.25 * importance + 0.75 * occurrence
+    $$
+    then we add the first two **new** keywords (notice that in this part we distinguish 2-gram keywords from 1-gram keywords, different from the above computation process.), that is, keywords that are not in the previous search words, to the search words for the next iteration.
+
+* **New words reordering:**
+
+  * The search words will be again sorted by their values in the dictionary using the same expression above. We do this again because this time both previous keywords and new keywords will be counted. 
+  * In case that the original search words have some interruptive information (i.e. useless for the targeted information based on the user feedbacks) and that such words won't appear in the keyword dictionary, we will assign a 0-value for such words in the reordering process, which aims to give them the least importance in the future queries.
+
+
+
 
