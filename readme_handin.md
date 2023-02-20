@@ -1,4 +1,4 @@
-**team members:** Ruineng Li, rl3315; Haoxuan Zhang, hz2716.
+**team members:** Ruineng Li, rl3315; Frank Zhang, hz2716.
 
 **api key:** AIzaSyDm0Wcp0OqqLiWypz0ijCRMjkHZ2mYisJs
 
@@ -10,6 +10,10 @@
 
 * install.sh: please install the packages listed in this .sh file before running the code
 * test.py: code file
+* readme_handin.md: readme
+* transcript_brin.txt
+* transcript_cases.txt
+* transcript_per_se.txt
 
 **Description for Program Running:**
 
