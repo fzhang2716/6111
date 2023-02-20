@@ -13,9 +13,6 @@
 
 **Description for Program Running:**
 
-
-**Description for Program Running:**
-
 * Prepare the enviroment:
   * In project1 folder, give execution right for install.sh by using: sudo chmod +x install.sh
   * It will install all required packages and set up the enviroment.
