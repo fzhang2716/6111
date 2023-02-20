@@ -1,0 +1,162 @@
+=============== Iteration:0=================
+ 
+result no.1
+relevant?:No
+[
+  url:https://www.thomaskeller.com/perseny
+  title:Per Se | Thomas Keller Restaurant Group
+  description:Per Se. Per Se Front Door. center. About. About; Restaurant · Team · Info & Directions · Gift Experiences · Reservations; Menus & Stories. Menus & Stories
+]
+ 
+result no.2
+relevant?:No
+[
+  url:https://en.wiktionary.org/wiki/per_se
+  title:per se - Wiktionary
+  description:In and of itself; by itself; without determination by or involvement of extraneous factors; as such quotations ▽synonym △ · (philosophy) Being a thing that ...
+]
+ 
+result no.3
+relevant?:Yes
+[
+  url:https://www.exploretock.com/perse
+  title:Per Se - New York, NY | Tock
+  description:Opened in 2004, Per Se is Thomas Keller's acclaimed interpretation of The French Laundry in the Deutsche Bank Center at Columbus Circle.
+]
+ 
+result no.4
+relevant?:Yes
+[
+  url:https://www.instagram.com/perseny/?hl=en
+  title:Per Se (@perseny) • Instagram photos and videos
+  description:Chef Thomas Keller's 3-Star Michelin restaurant overlooking Columbus Circle & Central Park located in New York City. exploretock.com/perse. 882 posts.
+]
+ 
+result no.5
+relevant?:Yes
+[
+  url:https://www.yelp.com/biz/per-se-new-york
+  title:PER SE - 7270 Photos & 1824 Reviews - Food near New York, NY ...
+  description:1824 reviews of Per Se "This is Thomas Keller's new resturant in New York. A must if you can get a reservation."
+]
+ 
+result no.6
+relevant?:No
+[
+  url:https://www.merriam-webster.com/dictionary/perse
+  title:Perse Definition & Meaning - Merriam-Webster
+  description:adjective (1) · ˈpərs · of a dark grayish blue resembling indigo ; adverb. (ˌ)pər-ˈsā,. also per-ˈsā,. or. (ˌ)pər-ˈsē · by, of, or in itself or oneself or ...
+]
+ 
+result no.7
+relevant?:Yes
+[
+  url:https://guide.michelin.com/us/en/new-york-state/new-york/.../per-se
+  title:Per Se – New York - a MICHELIN Guide Restaurant
+  description:Per Se – a Three MICHELIN Stars: Exceptional cuisine, worth a special journey! restaurant in the 2022 MICHELIN Guide USA. The MICHELIN inspectors' point of ...
+]
+ 
+result no.8
+relevant?:No
+[
+  url:https://dictionary.cambridge.org/dictionary/english/per-se
+  title:PER SE | English meaning - Cambridge Dictionary
+  description:5 days ago ... per se definition: 1. by or of itself: 2. by or of itself: 3. by or of itself: . Learn more.
+]
+ 
+result no.9
+relevant?:No
+[
+  url:https://www.persegroup.com/
+  title:Per Se Group
+  description:Per Sé is a leading workforce solution to the Energy and Industrial markets. Our technology, and recruitment expertise, seamlessly match talented people in ...
+]
+ 
+result no.10
+relevant?:No
+[
+  url:https://www.vocabulary.com/dictionary/per%20se
+  title:Per se - Definition, Meaning & Synonyms | Vocabulary.com
+  description:Per se is the phrase to use when you want to refer to a particular thing on its own. It is not this Latin phrase, per se, that is important, but rather the ...
+]
+=============== Iteration:1=================
+ 
+result no.1
+relevant?:Yes
+[
+  url:https://www.thomaskeller.com/perseny
+  title:Per Se | Thomas Keller Restaurant Group
+  description:Yountville; The French Laundry · Bouchon Bistro · Bouchon Bakery · Ad Hoc + Addendum · Regiis Ova Caviar & Champagne · La Calenda; New York; Per Se
+]
+ 
+result no.2
+relevant?:Yes
+[
+  url:https://guide.michelin.com/en/new-york-state/new-york/restaurant/per-se
+  title:Per Se – New York - a MICHELIN Guide Restaurant
+  description:Three MICHELIN Stars: Exceptional cuisine, worth a special journey! An experience at Thomas Keller's Per Se is one to be savored, recounted and remembered.
+]
+ 
+result no.3
+relevant?:Yes
+[
+  url:https://www.nytimes.com/2016/01/13/dining/pete-wells-per-se-review.html
+  title:At Thomas Keller's Per Se, Slips and Stumbles - The New York Times
+  description:Jan 12, 2016 ... Dinner or lunch at this grand, hermetic, self-regarding, ungenerous restaurant brings a protracted march of many dishes. In 2004, the year Per ...
+]
+ 
+result no.4
+relevant?:Yes
+[
+  url:https://ny.eater.com/maps/michelin-starred-restaurants-nyc-2022
+  title:NYC's 2022 Michelin-Starred Restaurants, Mapped
+  description:Oct 7, 2022 ... Per Se's kitchen has three lights up top, white brick, and stainless steel ... The interior of an outdoor dining structure in New York City.
+]
+ 
+result no.5
+relevant?:Yes
+[
+  url:https://en.wikipedia.org/wiki/Per_Se_(restaurant)
+  title:Per Se (restaurant) - Wikipedia
+  description:The Chef de Cuisine is Chad Palagi. Per Se has maintained three Michelin stars since the introduction of the New York City Guide in 2006.
+]
+ 
+result no.6
+relevant?:Yes
+[
+  url:https://ny.eater.com/2022/10/6/.../michelin-restaurants-nyc-stars-2022
+  title:Michelin Announces 2022 Stars for New York City
+  description:Oct 6, 2022 ... Eleven Madison Park kept its three Michelin stars as a vegan ... which, aside from Eleven Madison park, also includes the opulent Per Se, ...
+]
+ 
+result no.7
+relevant?:Yes
+[
+  url:https://www.thewholeworldisaplayground.com/the-per-se-experience- saturday-afternoon-lunch-in-new-york-with-three-michelin-stars/
+  title:The Per Se Experience: Saturday Afternoon Lunch in New York with ...
+  description:The Per Se Experience: Saturday Afternoon Lunch in New York with three Michelin Stars. Last Updated: February 27, 2021. By: Elaine.
+]
+ 
+result no.8
+relevant?:Yes
+[
+  url:https://ny.eater.com/2021/5/6/.../michelin-restaurants-nyc-stars-2021
+  title:Michelin Announces 2021 Stars for New York City
+  description:May 6, 2021 ... Three stars. Chef's Table at Brooklyn Fare. Eleven Madison Park. Le Bernardin. Masa. Per Se · Two Stars. Aquavit. Aska. Atera. Atomix. Blanca.
+]
+ 
+result no.9
+relevant?:Yes
+[
+  url:https://www.timeout.com/newyork/.../these-are-new-yorks-michelin-stars-for- 2022-100722
+  title:These are New York's Michelin-starred restaurants for 2022
+  description:Oct 6, 2022 ... Michelin's starred restaurants in NYC for 2022 include new tasting ... Le Bernardin, Masa, Per Se and even beleaguered Eleven Madison ...
+]
+ 
+result no.10
+relevant?:Yes
+[
+  url:https://www.instagram.com/perseny/?hl=en
+  title:Per Se (@perseny) • Instagram photos and videos
+  description:Chef Thomas Keller's 3-Star Michelin restaurant overlooking Columbus Circle & Central Park located in New York City. exploretock.com/perse. 882 posts.
+]

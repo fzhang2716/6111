@@ -1,0 +1,162 @@
+=============== Iteration:0=================
+ 
+result no.1
+relevant?:No
+[
+  url:https://www.cases.org/
+  title:CASES: Home
+  description:From court and program offices in the Bronx, Brooklyn, and Manhattan, CASES provides community-based alternatives to jail and prison. These programs address ...
+]
+ 
+result no.2
+relevant?:No
+[
+  url:https://www.casetify.com/
+  title:CASETiFY: Show Your Colors
+  description:CASETiFY - We make the most sustainable yet protective phone cases for iPhone 14 / iPhone 14 Pro / iPhone 14 Plus / iPhone 14 Pro Max and tech accessories.
+]
+ 
+result no.3
+relevant?:Yes
+[
+  url:https://covid.cdc.gov/
+  title:CDC COVID Data Tracker: Home
+  description:Stay up to date on the most recent data on vaccinations, cases, and deaths. Cases, Deaths, & Testing Case & Death Demographic Trends Vaccination Distribution & ...
+]
+ 
+result no.4
+relevant?:Yes
+[
+  url:https://www.worldometers.info/coronavirus/
+  title:COVID - Coronavirus Statistics - Worldometer
+  description:Reported Cases and Deaths by Country or Territory. NOTE: Effective February 1, 2023, the Coronavirus Tracker has switched from LIVE to Daily Updates. As a ...
+]
+ 
+result no.5
+relevant?:Yes
+[
+  url:https://www.arcgis.com/apps/.../bda7594740fd40299423467b48e9ecf6
+  title:Coronavirus COVID-19 (2019-nCoV)
+  description:Total Cases. Data source error. Total Deaths. Data source error. Total Vaccine Doses Administered. Cases | Deaths by Country/Region/Sovereignty.
+]
+ 
+result no.6
+relevant?:Yes
+[
+  url:https://www.vdh.virginia.gov/coronavirus/.../covid-19-in-virginia-cases/
+  title:Cases - Coronavirus
+  description:Jan 31, 2023 ... Case, hospitalization, and death data reflect Virginia residents only. Death data are presented by both date of report and by date of death and ...
+]
+ 
+result no.7
+relevant?:No
+[
+  url:https://www.cdc.gov/measles/cases-outbreaks.html
+  title:Measles Cases and Outbreaks | CDC
+  description:Measles cases in 2019. From January 1 to December 31, 2019, 1,274* individual cases of measles were confirmed in 31 states. This is the greatest number ...
+]
+ 
+result no.8
+relevant?:No
+[
+  url:https://www.vacourts.gov/caseinfo/home.html
+  title:Case Status and Information
+  description:Circuit Court. Circuit Court Case Information Online access to civil and criminal cases in select circuit courts. Cases may be searched by locality using name, ...
+]
+ 
+result no.9
+relevant?:No
+[
+  url:https://www.cdc.gov/poxvirus/monkeypox/response/2022/us-map.html
+  title:2022 U.S. Map & Case Count | Mpox | Poxvirus | CDC
+  description:View a map of 2022 mpox cases in the United States.
+]
+ 
+result no.10
+relevant?:No
+[
+  url:https://pbskids.org/oddsquad/games/cases
+  title:Odd Squad: Cases
+  description:Change your station. Back. Odd Squad Game: Cases. Play Pause Audio On Audio Off Voice Music Sound Effects Closed Captioning Fullscreen Help Close.
+]
+=============== Iteration:1=================
+ 
+result no.1
+relevant?:Yes
+[
+  url:https://www.worldometers.info/coronavirus/
+  title:COVID - Coronavirus Statistics - Worldometer
+  description:Daily and weekly updated statistics tracking the number of COVID-19 cases, recovered, and deaths. Historical data with cumulative charts, graphs, ...
+]
+ 
+result no.2
+relevant?:Yes
+[
+  url:https://www.arcgis.com/apps/.../bda7594740fd40299423467b48e9ecf6
+  title:Coronavirus COVID-19 (2019-nCoV)
+  description:Total Cases. Data source error. Total Deaths. Data source error. Total Vaccine Doses Administered. Cases | Deaths by Country/Region/Sovereignty.
+]
+ 
+result no.3
+relevant?:Yes
+[
+  url:https://www.cdc.gov/coronavirus/2019-ncov/index.html
+  title:Coronavirus Disease 2019 (COVID-19) | CDC
+  description:Find links to guidance and information on all topics related to COVID-19, including the ... Stay up to date with your COVID-19 vaccines. ... Cases in US.
+]
+ 
+result no.4
+relevant?:Yes
+[
+  url:https://covid19.who.int/
+  title:WHO Coronavirus (COVID-19) Dashboard
+  description:World Health Organization Coronavirus disease situation dashboard presents official daily counts of COVID-19 cases and deaths worldwide, ...
+]
+ 
+result no.5
+relevant?:Yes
+[
+  url:https://covid.cdc.gov/
+  title:CDC COVID Data Tracker: Home
+  description:Stay up to date on the most recent data on vaccinations, cases, and deaths. Cases, Deaths, & Testing Case & Death Demographic Trends Vaccination Distribution & ...
+]
+ 
+result no.6
+relevant?:Yes
+[
+  url:https://www.michigan.gov/coronavirus
+  title:Coronavirus
+  description:Case and death data will be inclusive of both confirmed and probable cases and deaths. The cumulative county COVID-19 case rate map has been replaced with a ...
+]
+ 
+result no.7
+relevant?:Yes
+[
+  url:https://msdh.ms.gov/covid-19
+  title:Coronavirus COVID-19 - Mississippi State Department of Health
+  description:New Cases. 3,594. New COVID-19 positive test results reported to MSDH for this time period. Total Mississippi Cases. 984,614. New Deaths.
+]
+ 
+result no.8
+relevant?:Yes
+[
+  url:https://ldh.la.gov/Coronavirus/
+  title:Louisiana Coronavirus | La Dept. of Health
+  description:Summary Dashboard · Covid-19 Community Levels by Parish · Case Data · Death Data · Hospital Data · Vaccination Data · Comparison of Percentage of COVID-19 Cases, ...
+]
+ 
+result no.9
+relevant?:Yes
+[
+  url:https://coronavirus.ohio.gov/home
+  title:COVID-19 | Ohio.gov
+  description:COVID-19 Cases Count to be Underreported Today Due to Electronic Lab Reporting ... case count numbers are updated at 2:00 p.m. on coronavirus.ohio.gov.
+]
+ 
+result no.10
+relevant?:Yes
+[
+  url:https://coronavirus.idaho.gov/
+  title:Welcome to Novel Coronavirus (COVID-19)
+  description:Case data are based on surveillance system records provided by the public health districts. Public health district data will be updated on their agency website ...
+]

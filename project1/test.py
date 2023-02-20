@@ -131,6 +131,9 @@ def main():
     
     while precision < target_precision:
         
+        with open("transcript.txt", "a") as output_file:
+            output_file.write("=============== Iteration:{}=================".format(str(iteration))+"\n")
+        
         searchResult = list()
 
         data = service.cse().list(q=" ".join(search_words), cx=engine_id,).execute()
@@ -151,18 +154,31 @@ def main():
         user_feedback = []
         for result_idx, result in enumerate(searchResult):
             url, title, description, _ = result
-            print("=================================")
+            print(" ")
             print("result no.", result_idx+1)
-            print("url:", url)
-            print("title:", title)
-            print("description", description)
+            print(" url:", url)
+            print(" title:", title)
+            print(" description", description)
             rel = input(" relevant? type Y/N. ")
+            ifRelevant = ""
             if rel in ["Y", "y"]:
                 user_feedback.append(1)
+                ifRelevant = "Yes"
             elif rel in ["N", "n"]:
                 user_feedback.append(0)
+                ifRelevant = "No"
             else:
                 raise ValueError("Please type Y/N.")
+            
+            with open("transcript.txt", "a") as output_file:
+                output_file.write(" "+"\n")
+                output_file.write("result no."+ str(result_idx + 1) + "\n")
+                output_file.write("relevant?:" + ifRelevant + "\n")
+                output_file.write("[" + "\n")
+                output_file.write("  url:" + url + "\n")
+                output_file.write("  title:" + title + "\n")
+                output_file.write("  description:" +  description + "\n")
+                output_file.write("]" + "\n")     
 
         if sum(user_feedback)/ 10. >= target_precision:
             print("reach target precision at iter:{} with precision {}/{}.".format(iteration, sum(user_feedback), "10"))
