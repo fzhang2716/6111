@@ -149,7 +149,7 @@ def main():
     r2required_entities = {1: ["PERSON", "ORG"], 2: ["PERSON", "ORG"], 3: ["PERSON", "LOC", "GPE"], 4: ["PERSON", "ORG"]}
 
     # openai settings
-    openai.api_key = "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"
+    openai.api_key = ""
 
     extraction_method, api_key, engine_id, openai_key, r, t, q, k = processUserInput()
 
