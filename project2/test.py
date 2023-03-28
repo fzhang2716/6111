@@ -6,6 +6,7 @@ import spacy
 from spanbert import SpanBERT
 import itertools
 import openai
+from tqdm import tqdm
 
 def get_text(url):
     text = ""
@@ -37,10 +38,11 @@ def process_required_entities(sent2ents, required_entity_types):
 
     sent2ents_processed = []
 
-    for ents_per_sent in sent2ents:
+    for ents_per_sent in tqdm(sent2ents):
         sent, named_entities_per_sent = ents_per_sent["sentence"], ents_per_sent["named_entities"]
         required_named_entities = [ent for ent in named_entities_per_sent if ent.label_ in required_entity_types]
-        sent2ents_processed.append({"sentence": sent, "named_entities": named_entities_per_sent})
+        if len(required_named_entities) != 0:
+            sent2ents_processed.append({"sentence": sent, "named_entities": named_entities_per_sent})
 
     return sent2ents_processed
 
@@ -48,7 +50,7 @@ def process_required_pairs(sent2ents, required_relation_types, spacy2bert):
 
     required_pairs, required_sents = [], []
 
-    for ents_per_sent in sent2ents:
+    for ents_per_sent in tqdm(sent2ents):
 
         sent, named_entities_per_sent = ents_per_sent["sentence"], ents_per_sent["named_entities"]
 
@@ -91,7 +93,7 @@ def process_relations(model, pairs, sents, confidence_threshold, required_relati
 def extraction_spanbert(spanbert_model, relations, t, required_relation_types, required_tuples, required_tuples_with_scores):
 
 
-    for relations_per_sent in relations:
+    for relations_per_sent in tqdm(relations):
         relations_pred_per_sent = spanbert_model.predict(relations_per_sent)
 
         for relation, relation_pred in zip(relations_per_sent, relations_pred_per_sent):
@@ -201,50 +203,53 @@ def main():
             description = item["snippet"]
             search_results.append((url,title,description))
 
-        for result in search_results:
+        for result_idx, result in enumerate(search_results):
             curr_url = result[0]
+            print("URL {} processing:".format(result_idx))
             if curr_url not in used_urls:
                 used_urls.add(curr_url)
 
                 webpage_text = get_text(result[0])
                 if webpage_text != None:
                     sent2ents = process_text(spacy_model, webpage_text)
+                    print("processing entities for url {}...".format(result_idx))
                     sent2ents_required = process_required_entities(sent2ents, required_entity_types)
-                    print("finished processing entities.")
+                    print("processing entities pairs for url {}...".format(result_idx))
                     pairs_required, sents_required = process_required_pairs(sent2ents_required, required_relation_types, spacy2bert)
-                    print("finished processing pairs.")
+                    print("processing relation extraction for url {}...".format(result_idx))
                     X, X_with_scores = process_relations(model, pairs_required, sents_required, t, required_spanbert_relations, required_relation_types, X, X_with_scores)
-                    print("finished processing relations.")
-                    if extraction_method == "spanbert":
-                        X_with_scores_ordered = sorted(X_with_scores, key=lambda x:x[1], reverse=True)
-                        assert len(X) == len(X_with_scores)
+    
+        if extraction_method == "-spanbert":
+            X_with_scores_ordered = sorted(X_with_scores.items(), key=lambda x:x[1], reverse=True)
+            assert len(X) == len(X_with_scores)
 
-                        if len(X) > k:
-                            return [tuple_with_score[0] for tuple_with_score in X_with_scores_ordered][:k]
-                        else:
-                            for unique_tuple in X_with_scores_ordered:
-                                relation_tuple, confidence_score = unique_tuple
-                                query = [relation_tuple[0], relation_tuples[2]]
-                                if query in used_queries:
-                                    continue
-                                else:
-                                    used_queries.add(query)
-                                    q = query
-                                    break
-
-                    elif extraction_method == "gpt3":
-                        if len(unique_tuples) > k:
-                            return unique_tuples[:k]
-                        else:
-                            for unique_tuple in unique_tuples:
-                                if unique_tuple in used_queries:
-                                    continue
-                                else:
-                                    used_queries.add(unique_tuple)
-                                    q = unique_tuple
-                                    break
+            if len(X) > k:
+                return [tuple_with_score[0] for tuple_with_score in X_with_scores_ordered][:k]
+            else:
+                for unique_tuple in X_with_scores_ordered:
+                    relation_tuple, confidence_score = unique_tuple
+                    query = (relation_tuple[0], relation_tuple[2])
+                    if query in used_queries:
+                        continue
                     else:
-                        raise NotImplementedError
+                        used_queries.add(query)
+                        q = query
+                        break
+
+        elif extraction_method == "-gpt3":
+            if len(unique_tuples) > k:
+                return unique_tuples[:k]
+            else:
+                for unique_tuple in unique_tuples:
+                    if unique_tuple in used_queries:
+                        continue
+                    else:
+                        used_queries.add(unique_tuple)
+                        q = unique_tuple
+                        break
+        else:
+            raise NotImplementedError
+
 
 
 if __name__ == "__main__":
