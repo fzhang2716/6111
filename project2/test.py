@@ -253,7 +253,7 @@ def main():
 
 
 if __name__ == "__main__":
-# python3 test.py -spanbert AIzaSyDm0Wcp0OqqLiWypz0ijCRMjkHZ2mYisJs 2d6a0e6f605702952 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 2 0.7 "bill gates microsoft" 10
+# python3 test.py -spanbert AIzaSyDm0Wcp0OqqLiWypz0ijCRMjkHZ2mYisJs 2d6a0e6f605702952 replace-with-openai-key-here 2 0.7 "bill gates microsoft" 10
 
     main()
 
