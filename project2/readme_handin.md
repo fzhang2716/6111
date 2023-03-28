@@ -2,13 +2,17 @@
       Ruineng Li : rl3315, Frank Zhang : hz2716
 
 * List of Files:
+      readme
+      project2.py
       requirement.txt
-      test.py
 
 * A clear description of how to run your program.
-      1. install the requirement.txt
-          2. execute the python file by:
-          python3 test.py -spanbert AIzaSyDm0Wcp0OqqLiWypz0ijCRMjkHZ2mYisJs 2d6a0e6f605702952 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 2 0.7 "bill gates microsoft" 10
+  * besides the packages installed in instruction here http://www.cs.columbia.edu/~gravano/cs6111/Proj2/ ,we need to install the following pacakages:
+    * sudo pip3 install openai
+    * sudo pip3 install tqdm
+  * execute the python file by:
+    * move project2.py into SpanBERT folder
+    * go into SpanBERT folder and execute: python3 project2.py -spanbert AIzaSyDm0Wcp0OqqLiWypz0ijCRMjkHZ2mYisJs 2d6a0e6f605702952 < open-ai key> 2 0.7 "bill gates microsoft" 10
 
 * Internal Design Description
   * webpage extraction
