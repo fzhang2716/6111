@@ -8,7 +8,11 @@ import itertools
 import openai
 from tqdm import tqdm
 
-def get_text(url):
+def get_text(url, idx,length):
+    print("URL ( {} / {}): {}".format(idx+1,length,url))
+    print("        Fetching text from url ...")
+    
+    
     text = ""
     try:
         html = urllib.request.urlopen(url)
@@ -18,9 +22,13 @@ def get_text(url):
     for para in htmlParse.find_all("p"):
         text = text + para.get_text()
     if len(text) == 0:
+        print("        Fail to fetch the text.")
         return None
     if len(text)>10000:
+        print("        Trimming webpage content from {} to 10000 characters".format(len(text)))
         text = text[ 0 : 10000 ]
+    print("        Webpage length (num characters): {}".format(len(text)))
+    print("        Annotating the webpage using spacy...")
     return text
 
 def process_text(model, text):
@@ -208,8 +216,7 @@ def main():
             print("URL {} processing:".format(result_idx))
             if curr_url not in used_urls:
                 used_urls.add(curr_url)
-
-                webpage_text = get_text(result[0])
+                webpage_text = get_text(result[0], result_idx,len(search_results))
                 if webpage_text != None:
                     sent2ents = process_text(spacy_model, webpage_text)
                     print("processing entities for url {}...".format(result_idx))
@@ -284,6 +291,3 @@ if __name__ == "__main__":
     # pairs_required, sents_required = process_required_pairs(sent2ents_required, required_relation_types, spacy2bert)
     # unique_tuples, unique_tuples_with_scores = process_relations(model, pairs_required, sents_required, t, required_spanbert_relations)
     # print(unique_tuples)
-
-
-
