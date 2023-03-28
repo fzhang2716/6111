@@ -6,6 +6,7 @@ import spacy
 from spanbert import SpanBERT
 import itertools
 import openai
+import re
 from tqdm import tqdm
 
 def get_text(url, idx, length, extraction_method):
@@ -20,8 +21,15 @@ def get_text(url, idx, length, extraction_method):
         htmlParse = BeautifulSoup(html, 'html.parser')
     except urllib.error.HTTPError: 
         return None
-    for para in htmlParse.find_all("p"):
-        text = text + para.get_text()
+
+    for data in htmlParse(['style', 'script', 'noscript', 'sup', 'img', 'cite']): 
+        data.decompose()
+    text = htmlParse.get_text(separator="\n", strip=False)
+    #remove all symbols except . and space
+    # text = re.sub('[^a-zA-Z0-9 \n\.]', ' ', text)
+    text = " ".join(text.split())
+
+   
     if len(text) == 0:
         with open("transcript{}.txt".format(extraction_method), "a") as output_file:
             output_file.write("        Fail to fetch the text.\n")
@@ -35,6 +43,7 @@ def get_text(url, idx, length, extraction_method):
         output_file.write("        Webpage length (num characters): {}\n".format(len(text)))
         output_file.write("        Annotating the webpage using spacy...\n")
 
+    print(text)
     return text
 
 def process_text(model, text):
@@ -347,6 +356,3 @@ if __name__ == "__main__":
     # pairs_required, sents_required = process_required_pairs(sent2ents_required, required_relation_types, spacy2bert)
     # unique_tuples, unique_tuples_with_scores = process_relations(model, pairs_required, sents_required, t, required_spanbert_relations)
     # print(unique_tuples)
-
-
-
