@@ -1,6 +1,6 @@
 import csv
 import sys
-from itertools import chain, combinations
+from itertools import combinations
 
 def get_L1(filename, min_sup, all_supports):
     
