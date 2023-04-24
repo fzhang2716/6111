@@ -1,0 +1,230 @@
+Parameters:
+Client key =	 AIzaSyDm0Wcp0OqqLiWypz0ijCRMjkHZ2mYisJs
+Engine key =	 2d6a0e6f605702952
+OpenAI key =	 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
+Method =	 -spanbert
+Relation =	 Work_For
+Threshold = 	 0.7
+Query = 	 bill gates microsoft
+Loading necessary libraries; This should take a minute or so ...)=========== Iteration: 0 - Query: bill gates microsoft ===========
+URL ( 1 / 10): https://en.wikipedia.org/wiki/Bill_Gates
+        Fetching text from url ...
+        Trimming webpage content from 92214 to 10000 characters
+        Webpage length (num characters): 10000
+        Annotating the webpage using spacy...
+Annotating the webpage using spacy...
+Extracted 66 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+Processed 5/18 sentences.
+=== Extracted Relation ===
+Input Tokens:['Occupations', 'Businessman', 'philanthropist', 'programmer', 'investor', 'writer', 'Years', 'active', '1972–present', 'Known', 'for', 'Co-founder', 'of', 'Microsoft', 'and', 'Bill', '&', 'Melinda', 'Gates', 'Foundation', 'Title', 'Partial', 'list', 'of', 'founded', 'and', 'chaired', 'companies', 'Co-chair', 'of', 'the', 'Bill', '&', 'Melinda', 'Gates', 'Foundation', 'Chairman', 'and', 'founder', 'of', 'Branded', 'Entertainment', 'Network', 'Chairman', 'and', 'founder', 'of', 'Cascade', 'Investment', 'Chairman', 'and', 'co-founder', 'of', 'TerraPower', 'Founder', 'of', 'Breakthrough', 'Energy', 'Founder', 'of', 'Gates', 'Ventures', 'Technology', 'advisor', 'of', 'Microsoft', 'Board', 'member', 'of', 'Berkshire', 'Hathaway', 'Microsoft', '(', 'former', ',', 'both', ')', 'Spouse', 'Melinda', 'French', '\u200b', '\u200b', '(', 'm.', '1994', ';', 'div', '.', '2021', ')']
+Output Confidence:0.9759894609451294;	 Subject:Melinda;	 Object:Microsoft	 
+Adding to set of extracted relations
+===============================
+=== Extracted Relation ===
+Input Tokens:['Occupations', 'Businessman', 'philanthropist', 'programmer', 'investor', 'writer', 'Years', 'active', '1972–present', 'Known', 'for', 'Co-founder', 'of', 'Microsoft', 'and', 'Bill', '&', 'Melinda', 'Gates', 'Foundation', 'Title', 'Partial', 'list', 'of', 'founded', 'and', 'chaired', 'companies', 'Co-chair', 'of', 'the', 'Bill', '&', 'Melinda', 'Gates', 'Foundation', 'Chairman', 'and', 'founder', 'of', 'Branded', 'Entertainment', 'Network', 'Chairman', 'and', 'founder', 'of', 'Cascade', 'Investment', 'Chairman', 'and', 'co-founder', 'of', 'TerraPower', 'Founder', 'of', 'Breakthrough', 'Energy', 'Founder', 'of', 'Gates', 'Ventures', 'Technology', 'advisor', 'of', 'Microsoft', 'Board', 'member', 'of', 'Berkshire', 'Hathaway', 'Microsoft', '(', 'former', ',', 'both', ')', 'Spouse', 'Melinda', 'French', '\u200b', '\u200b', '(', 'm.', '1994', ';', 'div', '.', '2021', ')']
+Output Confidence:0.9759894609451294;	 Subject:Melinda;	 Object:Bill & Melinda Gates Foundation Title Partial	 
+Adding to set of extracted relations
+===============================
+=== Extracted Relation ===
+Input Tokens:['Occupations', 'Businessman', 'philanthropist', 'programmer', 'investor', 'writer', 'Years', 'active', '1972–present', 'Known', 'for', 'Co-founder', 'of', 'Microsoft', 'and', 'Bill', '&', 'Melinda', 'Gates', 'Foundation', 'Title', 'Partial', 'list', 'of', 'founded', 'and', 'chaired', 'companies', 'Co-chair', 'of', 'the', 'Bill', '&', 'Melinda', 'Gates', 'Foundation', 'Chairman', 'and', 'founder', 'of', 'Branded', 'Entertainment', 'Network', 'Chairman', 'and', 'founder', 'of', 'Cascade', 'Investment', 'Chairman', 'and', 'co-founder', 'of', 'TerraPower', 'Founder', 'of', 'Breakthrough', 'Energy', 'Founder', 'of', 'Gates', 'Ventures', 'Technology', 'advisor', 'of', 'Microsoft', 'Board', 'member', 'of', 'Berkshire', 'Hathaway', 'Microsoft', '(', 'former', ',', 'both', ')', 'Spouse', 'Melinda', 'French', '\u200b', '\u200b', '(', 'm.', '1994', ';', 'div', '.', '2021', ')']
+Output Confidence:0.9759894609451294;	 Subject:Melinda;	 Object:Branded Entertainment Network	 
+Adding to set of extracted relations
+===============================
+=== Extracted Relation ===
+Input Tokens:['Occupations', 'Businessman', 'philanthropist', 'programmer', 'investor', 'writer', 'Years', 'active', '1972–present', 'Known', 'for', 'Co-founder', 'of', 'Microsoft', 'and', 'Bill', '&', 'Melinda', 'Gates', 'Foundation', 'Title', 'Partial', 'list', 'of', 'founded', 'and', 'chaired', 'companies', 'Co-chair', 'of', 'the', 'Bill', '&', 'Melinda', 'Gates', 'Foundation', 'Chairman', 'and', 'founder', 'of', 'Branded', 'Entertainment', 'Network', 'Chairman', 'and', 'founder', 'of', 'Cascade', 'Investment', 'Chairman', 'and', 'co-founder', 'of', 'TerraPower', 'Founder', 'of', 'Breakthrough', 'Energy', 'Founder', 'of', 'Gates', 'Ventures', 'Technology', 'advisor', 'of', 'Microsoft', 'Board', 'member', 'of', 'Berkshire', 'Hathaway', 'Microsoft', '(', 'former', ',', 'both', ')', 'Spouse', 'Melinda', 'French', '\u200b', '\u200b', '(', 'm.', '1994', ';', 'div', '.', '2021', ')']
+Output Confidence:0.9759894609451294;	 Subject:Melinda;	 Object:Cascade Investment	 
+Adding to set of extracted relations
+===============================
+=== Extracted Relation ===
+Input Tokens:['Occupations', 'Businessman', 'philanthropist', 'programmer', 'investor', 'writer', 'Years', 'active', '1972–present', 'Known', 'for', 'Co-founder', 'of', 'Microsoft', 'and', 'Bill', '&', 'Melinda', 'Gates', 'Foundation', 'Title', 'Partial', 'list', 'of', 'founded', 'and', 'chaired', 'companies', 'Co-chair', 'of', 'the', 'Bill', '&', 'Melinda', 'Gates', 'Foundation', 'Chairman', 'and', 'founder', 'of', 'Branded', 'Entertainment', 'Network', 'Chairman', 'and', 'founder', 'of', 'Cascade', 'Investment', 'Chairman', 'and', 'co-founder', 'of', 'TerraPower', 'Founder', 'of', 'Breakthrough', 'Energy', 'Founder', 'of', 'Gates', 'Ventures', 'Technology', 'advisor', 'of', 'Microsoft', 'Board', 'member', 'of', 'Berkshire', 'Hathaway', 'Microsoft', '(', 'former', ',', 'both', ')', 'Spouse', 'Melinda', 'French', '\u200b', '\u200b', '(', 'm.', '1994', ';', 'div', '.', '2021', ')']
+Output Confidence:0.9759894609451294;	 Subject:Melinda;	 Object:TerraPower Founder	 
+Adding to set of extracted relations
+===============================
+=== Extracted Relation ===
+Input Tokens:['Occupations', 'Businessman', 'philanthropist', 'programmer', 'investor', 'writer', 'Years', 'active', '1972–present', 'Known', 'for', 'Co-founder', 'of', 'Microsoft', 'and', 'Bill', '&', 'Melinda', 'Gates', 'Foundation', 'Title', 'Partial', 'list', 'of', 'founded', 'and', 'chaired', 'companies', 'Co-chair', 'of', 'the', 'Bill', '&', 'Melinda', 'Gates', 'Foundation', 'Chairman', 'and', 'founder', 'of', 'Branded', 'Entertainment', 'Network', 'Chairman', 'and', 'founder', 'of', 'Cascade', 'Investment', 'Chairman', 'and', 'co-founder', 'of', 'TerraPower', 'Founder', 'of', 'Breakthrough', 'Energy', 'Founder', 'of', 'Gates', 'Ventures', 'Technology', 'advisor', 'of', 'Microsoft', 'Board', 'member', 'of', 'Berkshire', 'Hathaway', 'Microsoft', '(', 'former', ',', 'both', ')', 'Spouse', 'Melinda', 'French', '\u200b', '\u200b', '(', 'm.', '1994', ';', 'div', '.', '2021', ')']
+Output Confidence:0.9759894609451294;	 Subject:Melinda;	 Object:Gates Ventures Technology	 
+Adding to set of extracted relations
+===============================
+=== Extracted Relation ===
+Input Tokens:['Occupations', 'Businessman', 'philanthropist', 'programmer', 'investor', 'writer', 'Years', 'active', '1972–present', 'Known', 'for', 'Co-founder', 'of', 'Microsoft', 'and', 'Bill', '&', 'Melinda', 'Gates', 'Foundation', 'Title', 'Partial', 'list', 'of', 'founded', 'and', 'chaired', 'companies', 'Co-chair', 'of', 'the', 'Bill', '&', 'Melinda', 'Gates', 'Foundation', 'Chairman', 'and', 'founder', 'of', 'Branded', 'Entertainment', 'Network', 'Chairman', 'and', 'founder', 'of', 'Cascade', 'Investment', 'Chairman', 'and', 'co-founder', 'of', 'TerraPower', 'Founder', 'of', 'Breakthrough', 'Energy', 'Founder', 'of', 'Gates', 'Ventures', 'Technology', 'advisor', 'of', 'Microsoft', 'Board', 'member', 'of', 'Berkshire', 'Hathaway', 'Microsoft', '(', 'former', ',', 'both', ')', 'Spouse', 'Melinda', 'French', '\u200b', '\u200b', '(', 'm.', '1994', ';', 'div', '.', '2021', ')']
+Output Confidence:0.9759894609451294;	 Subject:Melinda;	 Object:Microsoft Board	 
+Adding to set of extracted relations
+===============================
+=== Extracted Relation ===
+Input Tokens:['Occupations', 'Businessman', 'philanthropist', 'programmer', 'investor', 'writer', 'Years', 'active', '1972–present', 'Known', 'for', 'Co-founder', 'of', 'Microsoft', 'and', 'Bill', '&', 'Melinda', 'Gates', 'Foundation', 'Title', 'Partial', 'list', 'of', 'founded', 'and', 'chaired', 'companies', 'Co-chair', 'of', 'the', 'Bill', '&', 'Melinda', 'Gates', 'Foundation', 'Chairman', 'and', 'founder', 'of', 'Branded', 'Entertainment', 'Network', 'Chairman', 'and', 'founder', 'of', 'Cascade', 'Investment', 'Chairman', 'and', 'co-founder', 'of', 'TerraPower', 'Founder', 'of', 'Breakthrough', 'Energy', 'Founder', 'of', 'Gates', 'Ventures', 'Technology', 'advisor', 'of', 'Microsoft', 'Board', 'member', 'of', 'Berkshire', 'Hathaway', 'Microsoft', '(', 'former', ',', 'both', ')', 'Spouse', 'Melinda', 'French', '\u200b', '\u200b', '(', 'm.', '1994', ';', 'div', '.', '2021', ')']
+Output Confidence:0.9759894609451294;	 Subject:Melinda;	 Object:Berkshire Hathaway Microsoft	 
+Adding to set of extracted relations
+===============================
+Processed 10/18 sentences.
+=== Extracted Relation ===
+Input Tokens:['He', 'is', 'a', 'co-founder', 'of', 'Microsoft', ',', 'along', 'with', 'his', 'late', 'childhood', 'friend', 'Paul', 'Allen', '.']
+Output Confidence:0.9884834885597229;	 Subject:Paul Allen;	 Object:Microsoft	 
+Adding to set of extracted relations
+===============================
+=== Extracted Relation ===
+Input Tokens:['He', 'stepped', 'down', 'as', 'chairman', 'of', 'the', 'board', 'of', 'Microsoft', 'in', 'February', '2014', 'and', 'assumed', 'a', 'new', 'post', 'as', 'technology', 'adviser', 'to', 'support', 'the', 'newly', 'appointed', 'CEO', 'Satya', 'Nadella', '.']
+Output Confidence:0.9940270185470581;	 Subject:Satya Nadella;	 Object:Microsoft	 
+Adding to set of extracted relations
+===============================
+Processed 15/18 sentences.
+=== Extracted Relation ===
+Input Tokens:['In', 'October', '2017', ',', 'he', 'was', 'surpassed', 'by', 'Amazon', 'founder', 'and', 'CEO', 'Jeff', 'Bezos', ',', 'who', 'had', 'an', 'estimated', 'net', 'worth', 'of', 'US', '$', '90.6', 'billion', 'compared', 'to', 'Gates', "'s", 'net', 'worth', 'of', 'US', '$', '89.9', 'billion', 'at', 'the', 'time', '.']
+Output Confidence:0.7892915606498718;	 Subject:Jeff Bezos;	 Object:Amazon	 
+Adding to set of extracted relations
+===============================
+=== Extracted Relation ===
+Input Tokens:['In', 'October', '2017', ',', 'he', 'was', 'surpassed', 'by', 'Amazon', 'founder', 'and', 'CEO', 'Jeff', 'Bezos', ',', 'who', 'had', 'an', 'estimated', 'net', 'worth', 'of', 'US', '$', '90.6', 'billion', 'compared', 'to', 'Gates', "'s", 'net', 'worth', 'of', 'US', '$', '89.9', 'billion', 'at', 'the', 'time', '.']
+Output Confidence:0.7892915606498718;	 Subject:Jeff Bezos;	 Object:Gates	 
+Adding to set of extracted relations
+===============================
+Extracted annotations for  4  out of total  18  sentences
+Relations extracted from this website: 12 (Overall: 12)
+URL ( 2 / 10): https://www.britannica.com/biography/Bill-Gates
+        Fetching text from url ...
+URL ( 3 / 10): https://www.cnbc.com/2023/03/12/ai-chatbot-to-bill-gates-what-advice-would-you-give-younger-self.html
+        Fetching text from url ...
+        Webpage length (num characters): 4646
+        Annotating the webpage using spacy...
+Annotating the webpage using spacy...
+Extracted 34 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+Processed 5/9 sentences.
+Extracted annotations for  0  out of total  9  sentences
+Relations extracted from this website: 0 (Overall: 12)
+URL ( 4 / 10): https://twitter.com/BillGates
+        Fetching text from url ...
+        Webpage length (num characters): 76
+        Annotating the webpage using spacy...
+Annotating the webpage using spacy...
+Extracted 2 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+Extracted annotations for  0  out of total  0  sentences
+Relations extracted from this website: 0 (Overall: 12)
+URL ( 5 / 10): https://www.linkedin.com/in/williamhgates
+        Fetching text from url ...
+URL ( 6 / 10): https://news.microsoft.com/2020/03/13/microsoft-announces-change-to-its-board-of-directors/
+        Fetching text from url ...
+URL ( 7 / 10): https://www.gatesnotes.com/
+        Fetching text from url ...
+URL ( 8 / 10): https://www.forbes.com/profile/bill-gates/
+        Fetching text from url ...
+        Webpage length (num characters): 7118
+        Annotating the webpage using spacy...
+Annotating the webpage using spacy...
+Extracted 48 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+Processed 5/15 sentences.
+Processed 10/15 sentences.
+Extracted annotations for  0  out of total  15  sentences
+Relations extracted from this website: 0 (Overall: 12)
+URL ( 9 / 10): https://www.wsj.com/articles/microsoft-directors-decided-bill-gates-needed-to-leave-board-due-to-prior-relationship-with-staffer-11621205803
+        Fetching text from url ...
+URL ( 10 / 10): https://www.forbes.com/sites/alexkonrad/2023/02/06/bill-gates-openai-microsoft-ai-hottest-topic-2023/
+        Fetching text from url ...
+        Trimming webpage content from 11980 to 10000 characters
+        Webpage length (num characters): 10000
+        Annotating the webpage using spacy...
+Annotating the webpage using spacy...
+Extracted 105 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+=== Extracted Relation ===
+Input Tokens:['Alex', 'Konrad', 'Forbes', 'Staff', 'Covering', 'venture', 'capital', ',', 'cloud', 'and', 'startups', 'Following', 'Feb', '6', ',', '2023', ',', '06:30am', 'EST', '|', 'Share', 'to', 'Facebook', 'Share', 'to', 'Twitter', 'Share', 'to', 'Linkedin', 'Bill', 'Gates', ',', 'Co-chair', ',', 'Bill', '&', 'Melinda', 'Gates', 'Foundation', 'JOHN', 'KEATLEY', 'The', 'Microsoft', 'cofounder', 'talked', 'to', 'Forbes', 'about', 'his', 'work', 'with', 'AI', 'unicorn', 'OpenAI', 'and', 'back', 'on', 'Microsoft', '’', 's', 'campus', ',', 'AI', '’', 's', 'potential', 'impact', 'on', 'jobs', 'and', 'in', 'medicine', ',', 'and', 'much', 'more', '.']
+Output Confidence:0.7840710282325745;	 Subject:Alex Konrad Forbes;	 Object:Facebook Share	 
+Adding to set of extracted relations
+===============================
+=== Extracted Relation ===
+Input Tokens:['Alex', 'Konrad', 'Forbes', 'Staff', 'Covering', 'venture', 'capital', ',', 'cloud', 'and', 'startups', 'Following', 'Feb', '6', ',', '2023', ',', '06:30am', 'EST', '|', 'Share', 'to', 'Facebook', 'Share', 'to', 'Twitter', 'Share', 'to', 'Linkedin', 'Bill', 'Gates', ',', 'Co-chair', ',', 'Bill', '&', 'Melinda', 'Gates', 'Foundation', 'JOHN', 'KEATLEY', 'The', 'Microsoft', 'cofounder', 'talked', 'to', 'Forbes', 'about', 'his', 'work', 'with', 'AI', 'unicorn', 'OpenAI', 'and', 'back', 'on', 'Microsoft', '’', 's', 'campus', ',', 'AI', '’', 's', 'potential', 'impact', 'on', 'jobs', 'and', 'in', 'medicine', ',', 'and', 'much', 'more', '.']
+Output Confidence:0.7840710282325745;	 Subject:Alex Konrad Forbes;	 Object:Bill & Melinda Gates Foundation	 
+Adding to set of extracted relations
+===============================
+=== Extracted Relation ===
+Input Tokens:['Alex', 'Konrad', 'Forbes', 'Staff', 'Covering', 'venture', 'capital', ',', 'cloud', 'and', 'startups', 'Following', 'Feb', '6', ',', '2023', ',', '06:30am', 'EST', '|', 'Share', 'to', 'Facebook', 'Share', 'to', 'Twitter', 'Share', 'to', 'Linkedin', 'Bill', 'Gates', ',', 'Co-chair', ',', 'Bill', '&', 'Melinda', 'Gates', 'Foundation', 'JOHN', 'KEATLEY', 'The', 'Microsoft', 'cofounder', 'talked', 'to', 'Forbes', 'about', 'his', 'work', 'with', 'AI', 'unicorn', 'OpenAI', 'and', 'back', 'on', 'Microsoft', '’', 's', 'campus', ',', 'AI', '’', 's', 'potential', 'impact', 'on', 'jobs', 'and', 'in', 'medicine', ',', 'and', 'much', 'more', '.']
+Output Confidence:0.7840710282325745;	 Subject:Alex Konrad Forbes;	 Object:Microsoft	 
+Adding to set of extracted relations
+===============================
+=== Extracted Relation ===
+Input Tokens:['Alex', 'Konrad', 'Forbes', 'Staff', 'Covering', 'venture', 'capital', ',', 'cloud', 'and', 'startups', 'Following', 'Feb', '6', ',', '2023', ',', '06:30am', 'EST', '|', 'Share', 'to', 'Facebook', 'Share', 'to', 'Twitter', 'Share', 'to', 'Linkedin', 'Bill', 'Gates', ',', 'Co-chair', ',', 'Bill', '&', 'Melinda', 'Gates', 'Foundation', 'JOHN', 'KEATLEY', 'The', 'Microsoft', 'cofounder', 'talked', 'to', 'Forbes', 'about', 'his', 'work', 'with', 'AI', 'unicorn', 'OpenAI', 'and', 'back', 'on', 'Microsoft', '’', 's', 'campus', ',', 'AI', '’', 's', 'potential', 'impact', 'on', 'jobs', 'and', 'in', 'medicine', ',', 'and', 'much', 'more', '.']
+Output Confidence:0.7840710282325745;	 Subject:Alex Konrad Forbes;	 Object:Forbes	 
+Adding to set of extracted relations
+===============================
+=== Extracted Relation ===
+Input Tokens:['Alex', 'Konrad', 'Forbes', 'Staff', 'Covering', 'venture', 'capital', ',', 'cloud', 'and', 'startups', 'Following', 'Feb', '6', ',', '2023', ',', '06:30am', 'EST', '|', 'Share', 'to', 'Facebook', 'Share', 'to', 'Twitter', 'Share', 'to', 'Linkedin', 'Bill', 'Gates', ',', 'Co-chair', ',', 'Bill', '&', 'Melinda', 'Gates', 'Foundation', 'JOHN', 'KEATLEY', 'The', 'Microsoft', 'cofounder', 'talked', 'to', 'Forbes', 'about', 'his', 'work', 'with', 'AI', 'unicorn', 'OpenAI', 'and', 'back', 'on', 'Microsoft', '’', 's', 'campus', ',', 'AI', '’', 's', 'potential', 'impact', 'on', 'jobs', 'and', 'in', 'medicine', ',', 'and', 'much', 'more', '.']
+Output Confidence:0.7840710282325745;	 Subject:Alex Konrad Forbes;	 Object:Microsoft	 
+Adding to set of extracted relations
+===============================
+=== Extracted Relation ===
+Input Tokens:['Alex', 'Konrad', 'Forbes', 'Staff', 'Covering', 'venture', 'capital', ',', 'cloud', 'and', 'startups', 'Following', 'Feb', '6', ',', '2023', ',', '06:30am', 'EST', '|', 'Share', 'to', 'Facebook', 'Share', 'to', 'Twitter', 'Share', 'to', 'Linkedin', 'Bill', 'Gates', ',', 'Co-chair', ',', 'Bill', '&', 'Melinda', 'Gates', 'Foundation', 'JOHN', 'KEATLEY', 'The', 'Microsoft', 'cofounder', 'talked', 'to', 'Forbes', 'about', 'his', 'work', 'with', 'AI', 'unicorn', 'OpenAI', 'and', 'back', 'on', 'Microsoft', '’', 's', 'campus', ',', 'AI', '’', 's', 'potential', 'impact', 'on', 'jobs', 'and', 'in', 'medicine', ',', 'and', 'much', 'more', '.']
+Output Confidence:0.7840710282325745;	 Subject:Alex Konrad Forbes;	 Object:AI	 
+Adding to set of extracted relations
+===============================
+=== Extracted Relation ===
+Input Tokens:['Alex', 'Konrad', 'Forbes', 'Staff', 'Covering', 'venture', 'capital', ',', 'cloud', 'and', 'startups', 'Following', 'Feb', '6', ',', '2023', ',', '06:30am', 'EST', '|', 'Share', 'to', 'Facebook', 'Share', 'to', 'Twitter', 'Share', 'to', 'Linkedin', 'Bill', 'Gates', ',', 'Co-chair', ',', 'Bill', '&', 'Melinda', 'Gates', 'Foundation', 'JOHN', 'KEATLEY', 'The', 'Microsoft', 'cofounder', 'talked', 'to', 'Forbes', 'about', 'his', 'work', 'with', 'AI', 'unicorn', 'OpenAI', 'and', 'back', 'on', 'Microsoft', '’', 's', 'campus', ',', 'AI', '’', 's', 'potential', 'impact', 'on', 'jobs', 'and', 'in', 'medicine', ',', 'and', 'much', 'more', '.']
+Output Confidence:0.7840710282325745;	 Subject:Linkedin Bill Gates;	 Object:Facebook Share	 
+Adding to set of extracted relations
+===============================
+=== Extracted Relation ===
+Input Tokens:['Alex', 'Konrad', 'Forbes', 'Staff', 'Covering', 'venture', 'capital', ',', 'cloud', 'and', 'startups', 'Following', 'Feb', '6', ',', '2023', ',', '06:30am', 'EST', '|', 'Share', 'to', 'Facebook', 'Share', 'to', 'Twitter', 'Share', 'to', 'Linkedin', 'Bill', 'Gates', ',', 'Co-chair', ',', 'Bill', '&', 'Melinda', 'Gates', 'Foundation', 'JOHN', 'KEATLEY', 'The', 'Microsoft', 'cofounder', 'talked', 'to', 'Forbes', 'about', 'his', 'work', 'with', 'AI', 'unicorn', 'OpenAI', 'and', 'back', 'on', 'Microsoft', '’', 's', 'campus', ',', 'AI', '’', 's', 'potential', 'impact', 'on', 'jobs', 'and', 'in', 'medicine', ',', 'and', 'much', 'more', '.']
+Output Confidence:0.7840710282325745;	 Subject:Linkedin Bill Gates;	 Object:Bill & Melinda Gates Foundation	 
+Adding to set of extracted relations
+===============================
+=== Extracted Relation ===
+Input Tokens:['Alex', 'Konrad', 'Forbes', 'Staff', 'Covering', 'venture', 'capital', ',', 'cloud', 'and', 'startups', 'Following', 'Feb', '6', ',', '2023', ',', '06:30am', 'EST', '|', 'Share', 'to', 'Facebook', 'Share', 'to', 'Twitter', 'Share', 'to', 'Linkedin', 'Bill', 'Gates', ',', 'Co-chair', ',', 'Bill', '&', 'Melinda', 'Gates', 'Foundation', 'JOHN', 'KEATLEY', 'The', 'Microsoft', 'cofounder', 'talked', 'to', 'Forbes', 'about', 'his', 'work', 'with', 'AI', 'unicorn', 'OpenAI', 'and', 'back', 'on', 'Microsoft', '’', 's', 'campus', ',', 'AI', '’', 's', 'potential', 'impact', 'on', 'jobs', 'and', 'in', 'medicine', ',', 'and', 'much', 'more', '.']
+Output Confidence:0.7840710282325745;	 Subject:Linkedin Bill Gates;	 Object:Microsoft	 
+Adding to set of extracted relations
+===============================
+=== Extracted Relation ===
+Input Tokens:['Alex', 'Konrad', 'Forbes', 'Staff', 'Covering', 'venture', 'capital', ',', 'cloud', 'and', 'startups', 'Following', 'Feb', '6', ',', '2023', ',', '06:30am', 'EST', '|', 'Share', 'to', 'Facebook', 'Share', 'to', 'Twitter', 'Share', 'to', 'Linkedin', 'Bill', 'Gates', ',', 'Co-chair', ',', 'Bill', '&', 'Melinda', 'Gates', 'Foundation', 'JOHN', 'KEATLEY', 'The', 'Microsoft', 'cofounder', 'talked', 'to', 'Forbes', 'about', 'his', 'work', 'with', 'AI', 'unicorn', 'OpenAI', 'and', 'back', 'on', 'Microsoft', '’', 's', 'campus', ',', 'AI', '’', 's', 'potential', 'impact', 'on', 'jobs', 'and', 'in', 'medicine', ',', 'and', 'much', 'more', '.']
+Output Confidence:0.7840710282325745;	 Subject:Linkedin Bill Gates;	 Object:Forbes	 
+Adding to set of extracted relations
+===============================
+=== Extracted Relation ===
+Input Tokens:['Alex', 'Konrad', 'Forbes', 'Staff', 'Covering', 'venture', 'capital', ',', 'cloud', 'and', 'startups', 'Following', 'Feb', '6', ',', '2023', ',', '06:30am', 'EST', '|', 'Share', 'to', 'Facebook', 'Share', 'to', 'Twitter', 'Share', 'to', 'Linkedin', 'Bill', 'Gates', ',', 'Co-chair', ',', 'Bill', '&', 'Melinda', 'Gates', 'Foundation', 'JOHN', 'KEATLEY', 'The', 'Microsoft', 'cofounder', 'talked', 'to', 'Forbes', 'about', 'his', 'work', 'with', 'AI', 'unicorn', 'OpenAI', 'and', 'back', 'on', 'Microsoft', '’', 's', 'campus', ',', 'AI', '’', 's', 'potential', 'impact', 'on', 'jobs', 'and', 'in', 'medicine', ',', 'and', 'much', 'more', '.']
+Output Confidence:0.7840710282325745;	 Subject:Linkedin Bill Gates;	 Object:Microsoft	 
+Adding to set of extracted relations
+===============================
+=== Extracted Relation ===
+Input Tokens:['Alex', 'Konrad', 'Forbes', 'Staff', 'Covering', 'venture', 'capital', ',', 'cloud', 'and', 'startups', 'Following', 'Feb', '6', ',', '2023', ',', '06:30am', 'EST', '|', 'Share', 'to', 'Facebook', 'Share', 'to', 'Twitter', 'Share', 'to', 'Linkedin', 'Bill', 'Gates', ',', 'Co-chair', ',', 'Bill', '&', 'Melinda', 'Gates', 'Foundation', 'JOHN', 'KEATLEY', 'The', 'Microsoft', 'cofounder', 'talked', 'to', 'Forbes', 'about', 'his', 'work', 'with', 'AI', 'unicorn', 'OpenAI', 'and', 'back', 'on', 'Microsoft', '’', 's', 'campus', ',', 'AI', '’', 's', 'potential', 'impact', 'on', 'jobs', 'and', 'in', 'medicine', ',', 'and', 'much', 'more', '.']
+Output Confidence:0.7840710282325745;	 Subject:Linkedin Bill Gates;	 Object:AI	 
+Adding to set of extracted relations
+===============================
+=== Extracted Relation ===
+Input Tokens:['Alex', 'Konrad', 'Forbes', 'Staff', 'Covering', 'venture', 'capital', ',', 'cloud', 'and', 'startups', 'Following', 'Feb', '6', ',', '2023', ',', '06:30am', 'EST', '|', 'Share', 'to', 'Facebook', 'Share', 'to', 'Twitter', 'Share', 'to', 'Linkedin', 'Bill', 'Gates', ',', 'Co-chair', ',', 'Bill', '&', 'Melinda', 'Gates', 'Foundation', 'JOHN', 'KEATLEY', 'The', 'Microsoft', 'cofounder', 'talked', 'to', 'Forbes', 'about', 'his', 'work', 'with', 'AI', 'unicorn', 'OpenAI', 'and', 'back', 'on', 'Microsoft', '’', 's', 'campus', ',', 'AI', '’', 's', 'potential', 'impact', 'on', 'jobs', 'and', 'in', 'medicine', ',', 'and', 'much', 'more', '.']
+Output Confidence:0.7840710282325745;	 Subject:JOHN KEATLEY;	 Object:Facebook Share	 
+Adding to set of extracted relations
+===============================
+=== Extracted Relation ===
+Input Tokens:['Alex', 'Konrad', 'Forbes', 'Staff', 'Covering', 'venture', 'capital', ',', 'cloud', 'and', 'startups', 'Following', 'Feb', '6', ',', '2023', ',', '06:30am', 'EST', '|', 'Share', 'to', 'Facebook', 'Share', 'to', 'Twitter', 'Share', 'to', 'Linkedin', 'Bill', 'Gates', ',', 'Co-chair', ',', 'Bill', '&', 'Melinda', 'Gates', 'Foundation', 'JOHN', 'KEATLEY', 'The', 'Microsoft', 'cofounder', 'talked', 'to', 'Forbes', 'about', 'his', 'work', 'with', 'AI', 'unicorn', 'OpenAI', 'and', 'back', 'on', 'Microsoft', '’', 's', 'campus', ',', 'AI', '’', 's', 'potential', 'impact', 'on', 'jobs', 'and', 'in', 'medicine', ',', 'and', 'much', 'more', '.']
+Output Confidence:0.7840710282325745;	 Subject:JOHN KEATLEY;	 Object:Bill & Melinda Gates Foundation	 
+Adding to set of extracted relations
+===============================
+=== Extracted Relation ===
+Input Tokens:['Alex', 'Konrad', 'Forbes', 'Staff', 'Covering', 'venture', 'capital', ',', 'cloud', 'and', 'startups', 'Following', 'Feb', '6', ',', '2023', ',', '06:30am', 'EST', '|', 'Share', 'to', 'Facebook', 'Share', 'to', 'Twitter', 'Share', 'to', 'Linkedin', 'Bill', 'Gates', ',', 'Co-chair', ',', 'Bill', '&', 'Melinda', 'Gates', 'Foundation', 'JOHN', 'KEATLEY', 'The', 'Microsoft', 'cofounder', 'talked', 'to', 'Forbes', 'about', 'his', 'work', 'with', 'AI', 'unicorn', 'OpenAI', 'and', 'back', 'on', 'Microsoft', '’', 's', 'campus', ',', 'AI', '’', 's', 'potential', 'impact', 'on', 'jobs', 'and', 'in', 'medicine', ',', 'and', 'much', 'more', '.']
+Output Confidence:0.7840710282325745;	 Subject:JOHN KEATLEY;	 Object:Microsoft	 
+Adding to set of extracted relations
+===============================
+=== Extracted Relation ===
+Input Tokens:['Alex', 'Konrad', 'Forbes', 'Staff', 'Covering', 'venture', 'capital', ',', 'cloud', 'and', 'startups', 'Following', 'Feb', '6', ',', '2023', ',', '06:30am', 'EST', '|', 'Share', 'to', 'Facebook', 'Share', 'to', 'Twitter', 'Share', 'to', 'Linkedin', 'Bill', 'Gates', ',', 'Co-chair', ',', 'Bill', '&', 'Melinda', 'Gates', 'Foundation', 'JOHN', 'KEATLEY', 'The', 'Microsoft', 'cofounder', 'talked', 'to', 'Forbes', 'about', 'his', 'work', 'with', 'AI', 'unicorn', 'OpenAI', 'and', 'back', 'on', 'Microsoft', '’', 's', 'campus', ',', 'AI', '’', 's', 'potential', 'impact', 'on', 'jobs', 'and', 'in', 'medicine', ',', 'and', 'much', 'more', '.']
+Output Confidence:0.7840710282325745;	 Subject:JOHN KEATLEY;	 Object:Forbes	 
+Adding to set of extracted relations
+===============================
+=== Extracted Relation ===
+Input Tokens:['Alex', 'Konrad', 'Forbes', 'Staff', 'Covering', 'venture', 'capital', ',', 'cloud', 'and', 'startups', 'Following', 'Feb', '6', ',', '2023', ',', '06:30am', 'EST', '|', 'Share', 'to', 'Facebook', 'Share', 'to', 'Twitter', 'Share', 'to', 'Linkedin', 'Bill', 'Gates', ',', 'Co-chair', ',', 'Bill', '&', 'Melinda', 'Gates', 'Foundation', 'JOHN', 'KEATLEY', 'The', 'Microsoft', 'cofounder', 'talked', 'to', 'Forbes', 'about', 'his', 'work', 'with', 'AI', 'unicorn', 'OpenAI', 'and', 'back', 'on', 'Microsoft', '’', 's', 'campus', ',', 'AI', '’', 's', 'potential', 'impact', 'on', 'jobs', 'and', 'in', 'medicine', ',', 'and', 'much', 'more', '.']
+Output Confidence:0.7840710282325745;	 Subject:JOHN KEATLEY;	 Object:Microsoft	 
+Adding to set of extracted relations
+===============================
+=== Extracted Relation ===
+Input Tokens:['Alex', 'Konrad', 'Forbes', 'Staff', 'Covering', 'venture', 'capital', ',', 'cloud', 'and', 'startups', 'Following', 'Feb', '6', ',', '2023', ',', '06:30am', 'EST', '|', 'Share', 'to', 'Facebook', 'Share', 'to', 'Twitter', 'Share', 'to', 'Linkedin', 'Bill', 'Gates', ',', 'Co-chair', ',', 'Bill', '&', 'Melinda', 'Gates', 'Foundation', 'JOHN', 'KEATLEY', 'The', 'Microsoft', 'cofounder', 'talked', 'to', 'Forbes', 'about', 'his', 'work', 'with', 'AI', 'unicorn', 'OpenAI', 'and', 'back', 'on', 'Microsoft', '’', 's', 'campus', ',', 'AI', '’', 's', 'potential', 'impact', 'on', 'jobs', 'and', 'in', 'medicine', ',', 'and', 'much', 'more', '.']
+Output Confidence:0.7840710282325745;	 Subject:JOHN KEATLEY;	 Object:AI	 
+Adding to set of extracted relations
+===============================
+Processed 5/9 sentences.
+Extracted annotations for  1  out of total  9  sentences
+Relations extracted from this website: 18 (Overall: 27)
+================== ALL RELATIONS for per:employee_of ( 27 ) =================
+Confidence:0.9940270185470581	 Subject:Satya Nadella	 Object:Microsoft
+Confidence:0.9884834885597229	 Subject:Paul Allen	 Object:Microsoft
+Confidence:0.9759894609451294	 Subject:Melinda	 Object:Microsoft
+Confidence:0.9759894609451294	 Subject:Melinda	 Object:Bill & Melinda Gates Foundation Title Partial
+Confidence:0.9759894609451294	 Subject:Melinda	 Object:Branded Entertainment Network
+Confidence:0.9759894609451294	 Subject:Melinda	 Object:Cascade Investment
+Confidence:0.9759894609451294	 Subject:Melinda	 Object:TerraPower Founder
+Confidence:0.9759894609451294	 Subject:Melinda	 Object:Gates Ventures Technology
+Confidence:0.9759894609451294	 Subject:Melinda	 Object:Microsoft Board
+Confidence:0.9759894609451294	 Subject:Melinda	 Object:Berkshire Hathaway Microsoft
+Total # of iterations = 1

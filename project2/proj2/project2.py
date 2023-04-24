@@ -173,7 +173,7 @@ def extraction_gpt3(gpt3_model, sents, required_relation, X):
 
     relation_preds = []
 
-    for sent in sents:
+    for sent in tqdm(sents):
         prompt_candidates = {
                 "Schools_Attended" : "Given a sentence input, extract all triplets that satisfy the following relation: \
                         Required relation and the required output format:  'person'-'Schools_Attended'-'organization' \
@@ -337,11 +337,18 @@ def main():
                 results = list(X)[:k]
                 with open("transcript{}.txt".format(extraction_method), "a") as output_file:
                     output_file.write("================== ALL RELATIONS for {} ( {} ) =================\n".format(r2relation_types[r], k))
-                    for result in results:
+                    num_results = 0
+                    for result in list(X):
                         relations = result
-                        print(relations, confidence_score)
-                        output_file.write("Confidence:{}\t Subject:{}\t Object:{}\n".format(1, relations[0], relations[2]))
+                        print(relations)
+                        try:
+                            output_file.write("Confidence:{}\t Subject:{}\t Object:{}\n".format(1, relations[0], relations[2]))
+                            num_results += 1
+                        except:
+                            continue
                     output_file.write("Total # of iterations = {}\n".format(iter_idx))
+                    if num_results >= 10:
+                        break
                 return
             else:
                 for unique_tuple in unique_tuples:
