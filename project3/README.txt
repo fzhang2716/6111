@@ -63,7 +63,7 @@ A README file including the following information:
 	- The above process ends when the current large k-itemset is empty. After that, we forward all the large k-itemsets and the support statistics to obtain association rules. This process is motivated by the computation of the confidence score: to get the numerator, we simply address each item in all large k-item sets; and for the denominator, this need us to obtain every subset of the corresponding item in all large k-item sets. Here we use the combination function again for a similar purpose.
 	- We then evaluate whether the confidence score exceeds the threshold and output those which satisfies the given parameters. 
     f. Please use this line to run the code: 
-	python a_priori.py INTEGRATED-DATASET.csv 0.25 0.5
+	python3 a_priori.py INTEGRATED-DATASET.csv 0.25 0.5
         The results are compelling because we use min_sup=0.25 and min_conf=0.5. This means at least the items in the frequent set appear in more than 1/4 samples, and the rules appear in half of the samples that include the LHS of the rules, which means they are quite common in the dataset. 
    g.  We found some very interesting conclusions from the above extracted rules:
 	- In every sector, 95% arrested perpetrator are male, and most of them are around 25-44 years old.
