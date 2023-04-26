@@ -583,4 +583,5 @@ if __name__ == "__main__":
 
     combined_df["sector index"] = index_list
     combined_df.to_csv('cleaned_data.csv')
-    process_data('ccleaned_data.csv')
+    # need to manually delete some columns before running the following line. The resulted file is provided.
+    #process_data('cleaned_data_processed.csv')
