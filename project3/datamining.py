@@ -16,6 +16,124 @@ import pandas as pd
 import os
 from datetime import datetime
 
+def process_data(raw_filename):
+
+    import math
+
+    data = pd.read_csv(raw_filename)
+    sector_indexes = data["sector index"]
+    for i, idx in enumerate(sector_indexes):
+        idx_floor = int(idx/500) * 500
+        idx_ceil = (int(idx/500) + 1) * 500
+        new_idx = str(idx_floor) +"< sector_no <=" + str(idx_ceil)
+        data["sector index"][i] = new_idx
+
+    arrest_age_group = data["Arrests_AGE_GROUP"]
+    for i, item in enumerate(arrest_age_group):
+        if isinstance(item, str) or (isinstance(item, float) and not math.isnan(item)):
+            new_item = "arrested age:" + str(item)
+            data["Arrests_AGE_GROUP"][i] = new_item
+
+    arrest_sex = data["Arrests_PERP_SEX"]
+    for i, item in enumerate(arrest_sex):
+        if isinstance(item, str) or (isinstance(item, float) and not math.isnan(item)):
+            new_item = "arrested gender:" + str(item)
+            data["Arrests_PERP_SEX"][i] = new_item
+    
+    arrest_race = data["Arrests_PERP_RACE"]
+    for i, item in enumerate(arrest_race):
+        if isinstance(item, str) or (isinstance(item, float) and not math.isnan(item)):
+            new_item = "arrested race:" + str(item)
+            data["Arrests_PERP_RACE"][i] = new_item
+    
+    complaint_susp_age_group = data["Complaint_SUSP_AGE_GROUP"]
+    for i, item in enumerate(complaint_susp_age_group):
+        if isinstance(item, str) or (isinstance(item, float) and not math.isnan(item)):
+            new_item = "Complaint Suspect's Age:" + str(item)
+            data["Complaint_SUSP_AGE_GROUP"][i] = new_item
+    
+    complaint_susp_race_group = data["Complaint_SUSP_RACE"]
+    for i, item in enumerate(complaint_susp_race_group):
+        if isinstance(item, str) or (isinstance(item, float) and not math.isnan(item)):
+            new_item = "Complaint Suspect's Race:" + str(item)
+            data["Complaint_SUSP_RACE"][i] = new_item
+
+    complaint_susp_sex_group = data["Complaint_SUSP_SEX"]
+    for i, item in enumerate(complaint_susp_sex_group):
+        if isinstance(item, str) or (isinstance(item, float) and not math.isnan(item)):
+            new_item = "Complaint Suspect's Sex:" + str(item)
+            data["Complaint_SUSP_SEX"][i] = new_item
+    
+    complaint_vic_age_group = data["Complaint_VIC_AGE_GROUP"]
+    for i, item in enumerate(complaint_vic_age_group):
+        if isinstance(item, str) or (isinstance(item, float) and not math.isnan(item)):
+            new_item = "Complaint Victim's Age:" + str(item)
+            data["Complaint_VIC_AGE_GROUP"][i] = new_item
+    
+    complaint_vic_race_group = data["Complaint_VIC_RACE"]
+    for i, item in enumerate(complaint_vic_race_group):
+        if isinstance(item, str) or (isinstance(item, float) and not math.isnan(item)):
+            new_item = "Complaint Victim's Race:" + str(item)
+            data["Complaint_VIC_RACE"][i] = new_item
+
+    complaint_vic_sex_group = data["Complaint_VIC_SEX"]
+    for i, item in enumerate(complaint_vic_sex_group):
+        if isinstance(item, str) or (isinstance(item, float) and not math.isnan(item)):
+            new_item = "Complaint Victim's Sex:" + str(item)
+            data["Complaint_VIC_SEX"][i] = new_item
+    
+
+    ## shooting data
+    shooting_perp_age_group = data["Shooting_PERP_AGE_GROUP"]
+    for i, item in enumerate(shooting_perp_age_group):
+        if isinstance(item, str) or (isinstance(item, float) and not math.isnan(item)):
+            new_item = "Shooting Perpetrator's Age:" + str(item)
+            data["Shooting_PERP_AGE_GROUP"][i] = new_item
+    
+    shooting_perp_race_group = data["Shooting_PERP_RACE"]
+    for i, item in enumerate(shooting_perp_race_group):
+        if isinstance(item, str) or (isinstance(item, float) and not math.isnan(item)):
+            new_item = "Shooting Perpetrator's Race:" + str(item)
+            data["Shooting_PERP_RACE"][i] = new_item
+
+    shooting_perp_sex_group = data["Shooting_PERP_SEX"]
+    for i, item in enumerate(shooting_perp_sex_group):
+        if isinstance(item, str) or (isinstance(item, float) and not math.isnan(item)):
+            new_item = "shooting Perpetrator's Sex:" + str(item)
+            data["Shooting_PERP_SEX"][i] = new_item
+    
+    shooting_vic_age_group = data["Shooting_VIC_AGE_GROUP"]
+    for i, item in enumerate(shooting_vic_age_group):
+        if isinstance(item, str) or (isinstance(item, float) and not math.isnan(item)):
+            new_item = "Shooting Victim's Age:" + str(item)
+            data["Shooting_VIC_AGE_GROUP"][i] = new_item
+    
+    shooting_vic_race_group = data["Shooting_VIC_RACE"]
+    for i, item in enumerate(shooting_vic_race_group):
+        if isinstance(item, str) or (isinstance(item, float) and not math.isnan(item)):
+            new_item = "Shooting Victim's Race:" + str(item)
+            data["Shooting_VIC_RACE"][i] = new_item
+
+    shooting_vic_sex_group = data["Shooting_VIC_SEX"]
+    for i, item in enumerate(shooting_vic_sex_group):
+        if isinstance(item, str) or (isinstance(item, float) and not math.isnan(item)):
+            new_item = "Shooting Victim's Sex:" + str(item)
+            data["Shooting_VIC_SEX"][i] = new_item
+
+    shooting_murder_flag = data["Shooting_STATISTICAL_MURDER_FLAG"]
+    for i, item in enumerate(shooting_murder_flag):
+        if isinstance(item, str) or isinstance(item, bool) or (isinstance(item, float) and not math.isnan(item)):
+            new_item = "Shooting murdered:" + str(item)
+            data["Shooting_STATISTICAL_MURDER_FLAG"][i] = new_item
+    
+    shooting_location = data["Shooting_LOCATION_DESC"]
+    for i, item in enumerate(shooting_location):
+        if isinstance(item, str) or (isinstance(item, float) and not math.isnan(item)):
+            new_item = "Shooting Location:" + str(item)
+            data["Shooting_LOCATION_DESC"][i] = new_item
+
+    data.to_csv("INTEGRATED-DATASET.csv")
+
 
 def findMode(series,keyWord):
     if len(series) == 0:
@@ -464,4 +582,5 @@ if __name__ == "__main__":
         index_list.append(index_map[(row["sector laitude"],row["sector longtitude"])])
 
     combined_df["sector index"] = index_list
-    combined_df.to_csv('python_cleaned_data.csv')
+    combined_df.to_csv('cleaned_data.csv')
+    process_data('ccleaned_data.csv')

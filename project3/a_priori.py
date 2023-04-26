@@ -1,6 +1,7 @@
 import csv
 import sys
-from itertools import combinations
+from itertools import chain, combinations
+import pandas as pd
 
 def get_L1(filename, min_sup, all_supports):
     
@@ -90,6 +91,7 @@ def apriori(filename, min_sup, min_conf):
                 L[k].add(key)
         if len(L[k]) == 0:
             break
+        print("k:{}\t Lk length:{}".format(k, len(L[k])))
 
     return L, all_supports, transactions
 
@@ -120,14 +122,12 @@ def extract_association_rules(L, supports, min_conf, transactions):
 def process_input():
     sys.argv.pop(0)
     filename, min_sup, min_conf = sys.argv[0], float(sys.argv[1]), float(sys.argv[2])
-   
     return filename, min_sup, min_conf
 
 def main():
 
     filename, min_sup, min_conf = process_input()
     L, supports, transactions = apriori(filename, min_sup, min_conf)
-    print(supports)
     rules = extract_association_rules(L, supports, min_conf, transactions)
 
     sorted_supports = sorted(supports.items(), key=lambda x: x[1], reverse=True)
