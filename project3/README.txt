@@ -3,6 +3,8 @@ A README file including the following information:
     b. list of file we are submiting:
         README.txt
         cleaned_data.csv
+        cleaned_data_processed.csv
+        INTEGRATED-DATASET.csv
         Motor_Vehicle_Collisions_-_Crashes.csv
         NYPD_Arrests_Data__Historic_.csv
         NYPD_Complaint_Data_Current__Year_To_Date_.csv
@@ -50,7 +52,7 @@ A README file including the following information:
 	- Complaint_SUSP_AGE_GROUP, Complaint_SUSP_RACE, Complaint_SUSP_SEX, Complaint_VIC_AGE_GROUP, Complaint_VIC_RACE, Complaint_VIC_SEX, which record the basic information of people who are involved in the complaints
 	- Shooting_LOCATION_DESC, Shooting_STATISTICAL_MURDER_FLAG, which record the location, and whether people are killed in the issues
 	- Shooting_SUSP_AGE_GROUP, Shooting_SUSP_RACE, Shooting_SUSP_SEX, Shooting_VIC_AGE_GROUP,Shooting_VIC_SEX, Shooting_VIC_RACE, which record the basic information of people who are involved in the shootings
-            And other columns are dropped from the cleaned data. After that, for columns that contain similar properties or properties that are too brief, we add prefixes based on the header information for them for better illustration. In this way, we create the ultimate INTEGRATED-DATASET.CSV through the above process. If you want to reproduce the INTEGRATED-DATASET.csv, put all four NYC open datasets csv and datamining.py into a same folder and execute "python3 datamining.py".
+            And other columns are dropped from the cleaned data to get cleaned_data_processed.csv. After that, for columns that contain similar properties or properties that are too brief, we add prefixes based on the header information for them for better illustration. In this way, we create the ultimate INTEGRATED-DATASET.csv through the above process. If you want to reproduce the INTEGRATED-DATASET.csv, put all four NYC open datasets csv and datamining.py into a same folder and execute "python3 datamining.py".
         c.
             The reason we chose these four datasets is that we want to find some asscociation rules in the Public safety.
             It comes to our attention that location is a great index to combine public safety datasets because they all typically have a record of laititude and longtitude of an event. 
